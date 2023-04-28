@@ -6,7 +6,7 @@ searchBtn.addEventListener('click', function (event) {
     event.preventDefault()
     if (event.target.id === 'sbtn') {
         cityNameI = document.getElementById('cityNameInput').value;
-        let citycords = `http://api.openweathermap.org/geo/1.0/direct?q=${cityNameI}&limit=1&appid=0f0198b279599b1aff64ca75d3015cd1`
+        let citycords = `https://api.openweathermap.org/geo/1.0/direct?q=${cityNameI}&limit=1&appid=0f0198b279599b1aff64ca75d3015cd1`
         
     fetch(citycords).then(function (response) {
         return response.json()
@@ -14,13 +14,13 @@ searchBtn.addEventListener('click', function (event) {
         console.log(data)
         const cityLat = data[0].lat
         const cityLon = data[0].lon
-        const futureWeatherData = `http://api.openweathermap.org/data/2.5/forecast?lat=${cityLat}&lon=${cityLon}&units=imperial&appid=a1f4d055d6e2851259d43ad13be5b486`
+        const futureWeatherData = `https://api.openweathermap.org/data/2.5/forecast?lat=${cityLat}&lon=${cityLon}&units=imperial&appid=a1f4d055d6e2851259d43ad13be5b486`
         const currentWeatherData = `https://api.openweathermap.org/data/2.5/weather?lat=${cityLat}&lon=${cityLon}&units=imperial&appid=a1f4d055d6e2851259d43ad13be5b486`
 
         const newYork = document.getElementById('NY')
         newYork.addEventListener('click', function (event) {
             event.preventDefault()
-            citycords = `http://api.openweathermap.org/geo/1.0/direct?q=newyork&limit=1&appid=0f0198b279599b1aff64ca75d3015cd1`
+            citycords = `https://api.openweathermap.org/geo/1.0/direct?q=newyork&limit=1&appid=0f0198b279599b1aff64ca75d3015cd1`
         })
 
 
