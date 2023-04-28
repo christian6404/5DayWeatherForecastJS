@@ -27,5 +27,7 @@ Christian Smith------christian6404
 Search for Weather data for the current and next 5 days
 
 ## Sources 
-
+https://openweathermap.org/current
+https://openweathermap.org/forecast5
+https://openweathermap.org/api/geocoding-api  used the REVERSE geocoding api
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
